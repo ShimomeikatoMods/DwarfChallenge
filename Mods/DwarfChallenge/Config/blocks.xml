@@ -1,0 +1,8 @@
+<configs>
+
+<!-- Triple the drops from art of mining vol. 1 -->
+<setattribute xpath="/blocks/block[starts-with(@name, 'terrOre')]/drop[@name='resourceRawDiamond']" name="prob">.015</setattribute>
+<setattribute xpath="/blocks/block[starts-with(@name, 'terrOre')]/drop[@name='resourceSilverNugget']" name="prob">.03</setattribute>
+<setattribute xpath="/blocks/block[starts-with(@name, 'terrOre')]/drop[@name='resourceGoldNugget']" name="prob">.021</setattribute>
+
+</configs> 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Servers>
+	<ServerGroup Name="DwarfChallenge" Logo="logo" Description="Jonah's idea on a dwarf challenge with a few addition and changes to the game to help the player out to start digging that dwarf hole!">
+			<Server Name="DwarfChallenge" Logo="">
+			<Description>Description</Description>
+			<DownloadMode>Clone</DownloadMode>
+			<Version>Latest</Version>
+			<EAC>Disabled</EAC>
+			<ReleaseNotes></ReleaseNotes>
+			<Downloads>
+			<Download>https://github.com/ShimomeikatoMods/DwarfChallenge</Download>
+			</Downloads>
+		</Server>
+	</ServerGroup>
+</Servers>

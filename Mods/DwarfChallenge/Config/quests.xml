@@ -1,0 +1,156 @@
+<configs>
+	<!-- givequest quest_BasicSurvival1 -->
+	<!-- Open your Knapsack -->
+<set xpath="/quests/quest[@id='quest_BasicSurvival1']">
+	<property name="group_name_key" value="quest_BasicSurvival"/>
+	<property name="name_key" value="quest_BasicSurvival1"/>
+	<property name="subtitle_key" value="quest_BasicSurvival1_subtitle"/>
+	<property name="description_key" value="quest_BasicSurvival1_description"/>
+	<property name="icon" value="ui_game_symbol_backpack"/>
+	<property name="category_key" value="quest"/>
+	<property name="difficulty" value="veryeasy"/>
+	<property name="offer_key" value="quest_BasicSurvival_offer"/>
+	<property name="shareable" value="false"/>
+
+	<!--<action type="ShowTip" value="tutorialTipQuest02"/>-->
+	<action type="TrackQuest"/>
+
+	<objective type="FetchKeep" id="plantedMushroom1" value="5" phase="1"/>
+	<objective type="FetchKeep" id="drinkJarBoiledWater" value="5" phase="1"/>
+	<objective type="FetchKeep" id="foodCanChicken" value="5" phase="1"/>
+
+	<reward type="Exp" value="100"/>
+	<reward type="SkillPoints" value="4" chainreward="true"/>
+	<reward type="Quest" id="quest_BasicSurvival2"/>
+</set>
+
+	<!-- Craft a Stone Axe -->
+<set xpath="/quests/quest[@id='quest_BasicSurvival2']">
+	<property name="group_name_key" value="quest_BasicSurvival"/>
+	<property name="name_key" value="quest_BasicSurvival2"/>
+	<property name="subtitle" value="Craft a Stone Axe"/>
+	<property name="subtitle_key" value="quest_BasicSurvival2_subtitle"/>
+	<property name="description_key" value="quest_BasicSurvival2_description"/>
+	<property name="icon" value="ui_game_symbol_hammer"/>
+	<property name="category_key" value="quest"/>
+	<property name="offer_key" value="quest_BasicSurvival_offer"/>
+	<property name="shareable" value="false"/>
+	
+	<objective type="FetchKeep" id="resourceYuccaFibers" value="2" phase="1"/>
+	<objective type="FetchKeep" id="resourceWood" value="2" phase="1">
+		<modifier type="TrackBlocks">
+			<property name="block_index_name" value="quest_wood"/>
+			<property name="nav_object" value="quest_resource"/>
+			<property name="track_distance" value="20"/>
+		</modifier>
+	</objective>
+	<objective type="FetchKeep" id="resourceRockSmall" value="2" phase="1">
+		<modifier type="TrackBlocks">
+			<property name="block_index_name" value="quest_stone"/>
+			<property name="nav_object" value="quest_resource"/>
+			<property name="track_distance" value="20"/>
+		</modifier>
+	</objective>
+
+	<objective type="Craft">
+		<property name="phase" value="2"/>
+		<property name="item" value="meleeToolRepairT0StoneAxe"/>
+		<property name="count" value="1"/>
+	</objective>
+		
+	<reward type="Item" id="meleeToolPickT1IronPickaxe"  value="6"/>
+	<reward type="Exp" value="200"/>
+	<reward type="Quest" id="quest_BasicSurvival3"/>
+</set>
+
+	<!-- Gather stone, make a Land Claim Block and Bedroll -->
+<set xpath="/quests/quest[@id='quest_BasicSurvival3']">
+	<property name="group_name_key" value="quest_BasicSurvival"/>
+	<property name="name_key" value="quest_BasicSurvival3"/>
+	<property name="subtitle_key" value="quest_BasicSurvival3_subtitle"/>
+	<property name="description_key" value="quest_BasicSurvival3_description"/>
+	<property name="icon" value="ui_game_symbol_block_upgrade"/>
+	<property name="category_key" value="quest"/>
+	<property name="difficulty" value="veryeasy"/>
+	<property name="shareable" value="false"/>
+
+	<objective type="FetchKeep" id="resourceRockSmall" value="50" phase="1"/>
+	
+	<objective type="Craft">
+		<property name="phase" value="2"/>
+		<property name="item" value="keystoneBlock"/>
+		<property name="count" value="1"/>
+	</objective>
+	
+	<objective type="FetchKeep" id="resourceYuccaFibers" value="10" phase="1"/>
+	<objective type="Craft">
+		<property name="phase" value="2"/>
+		<property name="item" value="bedrollBlockVariantHelper"/>
+		<property name="count" value="1"/>
+	</objective>
+	
+	<reward type="Exp" value="300"/>
+	<reward type="Item" id="meleeToolPickT3Auger"  value="1"/>
+	<reward type="Item" id="ammoGasCan"  value="10000"/>
+	<reward type="Quest" id="quest_BasicSurvival4"/>
+</set>
+
+	<!-- Gather half a stack of stone -->
+<set xpath="/quests/quest[@id='quest_BasicSurvival4']">
+	<property name="group_name_key" value="quest_BasicSurvival"/>
+	<property name="name_key" value="quest_BasicSurvival4"/>
+	<property name="subtitle_key" value="quest_BasicSurvival4_subtitle"/>
+	<property name="description_key" value="quest_BasicSurvival4_description"/>
+	<property name="icon" value="ui_game_symbol_map_bed"/>
+	<property name="category_key" value="quest"/>
+	<property name="difficulty" value="veryeasy"/>
+	<property name="shareable" value="false"/>
+	
+	<action type="TrackQuest"/>
+	
+	<objective type="FetchKeep" id="resourceRockSmall" value="3000" phase="1"/>
+	
+	<reward type="Exp" value="400"/>
+	<reward type="Item" id="resourceRepairKit" value="4"/>
+	<reward type="Quest" id="quest_BasicSurvival5"/>
+</set>
+
+	<!-- Gather a stack of stone -->
+<set xpath="/quests/quest[@id='quest_BasicSurvival5']">
+	<property name="group_name_key" value="quest_BasicSurvival"/>
+	<property name="name_key" value="quest_BasicSurvival5"/>
+	<property name="subtitle_key" value="quest_BasicSurvival5_subtitle"/>
+	<property name="description_key" value="quest_BasicSurvival5_description"/>
+	<property name="icon" value="ui_game_symbol_resource"/>
+	<property name="category_key" value="quest"/>
+	<property name="difficulty" value="veryeasy"/>
+	<property name="shareable" value="false"/>
+	
+	<objective type="FetchKeep" id="resourceRockSmall" value="6000" phase="1"/>
+
+	<reward type="Exp" value="500"/>
+	<reward type="Item" id="bookArtOfMiningLuckyStrike" value="1"/>
+	<reward type="Quest" id="quest_BasicSurvival6"/>
+</set>
+
+	<!-- Place stuff in the base -->
+<set xpath="/quests/quest[@id='quest_BasicSurvival6']">
+	<property name="group_name_key" value="quest_BasicSurvival"/>
+	<property name="name_key" value="quest_BasicSurvival6"/>
+	<property name="subtitle_key" value="quest_BasicSurvival6_subtitle"/>
+	<property name="description_key" value="quest_BasicSurvival6_description"/>
+	<property name="icon" value="ui_game_symbol_map_bed"/>
+	<property name="category_key" value="quest"/>
+	<property name="difficulty" value="veryeasy"/>
+	<property name="shareable" value="false"/>
+	
+	<objective type="BlockPlace" id="bedrollBlockVariantHelper" value="1" phase="2"/>
+	<objective type="BlockPlace" id="keystoneBlock" value="1" phase="2"/>
+	
+	<reward type="Exp" value="600"/>
+	<reward type="Quest" id="quest_whiteRiverCitizen1">
+		<property name="chainquest" value="false"/>
+	</reward>
+</set>
+
+</configs>

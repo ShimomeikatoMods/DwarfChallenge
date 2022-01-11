@@ -1,0 +1,21 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+startKnapsackDC,items,Start,,,"Dwarf Knapsack"
+startKnapsackDCDesc,items,Start,,,"A knapsack which seems to have some stuff inside..."
+quest_BasicSurvival1,Quest,Quest Info,,,Basic Quest (1/6)
+quest_BasicSurvival1_description,Quest,Quest Info,,,"Lost in a world where there seems to be no one left. Who are you? How did you get here? What's this in my hands..?"
+quest_BasicSurvival1_subtitle,Quest,Quest Info,,,Open your Knapsack
+quest_BasicSurvival2,Quest,Quest Info,,,Dwarf Quest (2/6)
+quest_BasicSurvival2_description,Quest,Quest Info,,,"You're roots as a dwarf have been discovered. Maybe you can remember more if you tap into your previous life."
+quest_BasicSurvival2_subtitle,Quest,Quest Info,,,Craft a Stone Axe
+quest_BasicSurvival3,Quest,Quest Info,,,Dwarf Quest (3/6)
+quest_BasicSurvival3_description,Quest,Quest Info,,,"A base seems to be the only thing to protect you from these undead creatures. Find a suitable spot and start digging your dwarf hole!"
+quest_BasicSurvival3_subtitle,Quest,Quest Info,,,Gather stone, make a Land Claim Block and bedroll
+quest_BasicSurvival4,Quest,Quest Info,,,Dwarf Quest (4/6)
+quest_BasicSurvival4_description,Quest,Quest Info,,,"We need to start up a base, go create the entrance to your new dwarf hole!"
+quest_BasicSurvival4_subtitle,Quest,Quest Info,,,Gather half a stack of stone while making a base
+quest_BasicSurvival5,Quest,Quest Info,,,Dwarf Quest (5/6)
+quest_BasicSurvival5_description,Quest,Quest Info,,,"Hole out your base, gather stone and start selling those valuable gems!"
+quest_BasicSurvival5_subtitle,Quest,Quest Info,,,Gather a stack of stone while finishing up your base
+quest_BasicSurvival6,Quest,Quest Info,,,Dwarf Quest (6/6)
+quest_BasicSurvival6_description,Quest,Quest Info,,,"Dwarf hole is now complete! Well, sort of but let's first find that darn Trader."
+quest_BasicSurvival6_subtitle,Quest,Quest Info,,,Place Land Claim Block and Bedroll in your base

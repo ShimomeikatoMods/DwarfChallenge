@@ -1,0 +1,6 @@
+<configs>
+
+<!-- Start with a torch and a knapsack -->
+<setattribute xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvival']" name="value">meleeToolTorch,startKnapsackDC</setattribute>
+
+</configs>

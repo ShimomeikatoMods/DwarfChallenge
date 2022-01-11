@@ -1,0 +1,31 @@
+<configs>
+<!-- add the knapsack to the items -->
+<append xpath="/items">
+
+	<item name="startKnapsackDC">
+		<property name="HoldType" value="65"/>
+		<property name="Meshfile" value="#Other/Items?Weapons/Melee/Spear/spear_stone_Prefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="Stacknumber" value="1"/>
+		<property name="Material" value="Mleather"/>
+		<property class="Action0">
+			<property name="Class" value="OpenBundle"/>
+			<property name="Delay" value="0"/>
+			<property name="Use_time" value="0"/>
+			<property name="Create_item" value="plantedMushroom1,drinkJarBoiledWater,foodCanChicken"/>
+			<property name="Create_item_count" value="5,5,5"/>
+		</property>
+	</item>
+
+</append>
+
+<!-- Making all items except nuggets, gems and old cash unsellable so Jonah can't sell stuff by accident -->
+<append xpath="/items/item[not(starts-with(@name, 'resourceRawDiamond')) 
+and not(starts-with(@name, 'resourceGoldNugget')) 
+and not(starts-with(@name, 'resourceSilverNugget'))
+and not(starts-with(@name, 'oldCash'))]">
+	<property name="SellableToTrader" value="false" />
+</append>
+
+</configs>
+
